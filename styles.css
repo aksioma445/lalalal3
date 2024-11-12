@@ -30,7 +30,7 @@ body {
     width: 100px;
     height: 140px;
     top: 40px;
-    left: 230px;
+    left: 180px;
 }
 
 #user-id {
@@ -38,7 +38,7 @@ body {
     width: 120px;
     height: 120px;
     top: 65px;
-    left: 210px;
+    left: 160px;
 }
 
 #balance {
@@ -47,7 +47,7 @@ body {
     width: 300px;
     height: auto;
     top: 250px;
-    left: 145px;
+    left: 85px;
     animation: levitate2 5s infinite alternate ease-in-out;
 }
 
@@ -57,7 +57,7 @@ body {
     width: 100px;
     height: 100px;
     top: 475px;
-    left: 200px;
+    left: 95px;
     animation: levitate4 5s infinite alternate ease-in-out;
 }
 
@@ -66,8 +66,18 @@ body {
     z-index: 1;
     width: 40px;
     height: auto;
-    top: 525px;
-    left: 320px;
+    top: 145px;
+    left: 190px;
+    animation: levitate1 5s infinite alternate ease-in-out;
+}
+
+#refferal {
+    position: absolute;
+    z-index: 1;
+    width: 40px;
+    height: auto;
+    top: 527px;
+    left: 260px;
     animation: levitate5 5s infinite alternate ease-in-out;
 }
 
@@ -137,7 +147,7 @@ body {
     position: fixed; 
     bottom: 0;       
     width: 100%;    
-    height: 80px;
+    height: 20vw;
     display: flex;
     justify-content: space-around;
     align-items: center;
