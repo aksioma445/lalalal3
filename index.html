@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telegram Mini App</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body onload="openProfile()">
+    <div id="navigation">
+        <div class="nav-item">
+            <button class="nav-button" onclick="openChannel()">
+                <img src="канал.png" alt="Канал" class="button-image">
+            </button>
+            <span class="nav-text">Channel</span> <!-- Текст під кнопкою -->
+        </div>
+    
+        <div class="nav-item">
+            <button class="nav-button" onclick="openMarket()">
+                <img src="маркет.png" alt="Маркет" class="button-image">
+            </button>
+            <span class="nav-text">Market</span> <!-- Текст під кнопкою -->
+        </div>
+    
+        <div class="nav-item">
+            <img src="розділювач.png" alt="Розділювач" class="divider-image">
+        </div>
+    
+        <div class="nav-item">
+            <button class="nav-button" onclick="showSupport()">
+                <img src="допомога.png" alt="Допомога" class="button-image">
+            </button>
+            <span class="nav-text">Help</span> <!-- Текст під кнопкою -->
+        </div>
+    
+        <div class="nav-item">
+            <button class="nav-button" onclick="showMain()">
+                <img src="профіль.png" alt="Профіль" class="button-image">
+            </button>
+            <span class="nav-text">Menu</span> <!-- Текст під кнопкою -->
+        </div>
+    </div>
+    
+    <div id="profile-info" style="display: none;">
+        <div class="profile-item" id="username"></div>
+        <div class="profile-item" id="user-id"></div>
+        <div class="profile-item" id="balance"></div>
+        <div class="profile-item" id="level"></div>
+        <div class="profile-item" id="bonus"></div>
+    </div>
+
+   
+    
+</body>
+    <img src="subka1.png" alt="Bubble Image" id="my-subka">
+    <img src="idka.png" alt="Bubble Image" id="my-idka">
+    
+    <img src="buble1.png" alt="Bubble Image" id="my-buble1" data-text="Текст для першої картинки">
+    <img src="buble1.png" alt="Bubble Image" id="my-buble2" data-text="Текст для другої картинки">
+    <img src="buble1.png" alt="Bubble Image" id="my-buble3" data-text="Текст для третьої картинки">
+    <img src="buble1.png" alt="Bubble Image" id="my-buble4" data-text="Текст для четвертої картинки">
+    <img src="buble1.png" alt="Bubble Image" id="my-buble5" data-text="Текст для п'ятої картинки">
+
+    <img src="lvl.png" alt="Bubble Image" id="my-lvl">
+    <img src="referal.png" alt="Bubble Image" id="my-referal">
+    <img src="balance.png" alt="Bubble Image" id="my-balance">
+    <img src="bonus.png" alt="Bubble Image" id="my-bonus">
+
+</body>
+</html>

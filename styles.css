@@ -1,0 +1,328 @@
+/* Загальний стиль */
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('https://i.ibb.co/Nxs2PG0/2024-11-11-19-14-42.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    color: #FFFFFF;
+    overflow: hidden;
+}
+
+
+/* Username та ID у верхньому лівому куті */
+#user-info {
+    position: absolute;
+    top: 35px;
+    left: 30px;
+    color: white;
+    font-size: 20px;
+}
+
+
+/* Стилі для кожного блоку з текстом */
+#username {
+    position: absolute;
+    width: 100px;
+    height: 140px;
+    top: 40px;
+    left: 230px;
+}
+
+#user-id {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    top: 65px;
+    left: 210px;
+}
+
+#balance {
+    position: absolute;
+    z-index: 1;
+    width: 300px;
+    height: auto;
+    top: 250px;
+    left: 145px;
+    animation: levitate2 5s infinite alternate ease-in-out;
+}
+
+#level {
+    position: absolute;
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+    top: 475px;
+    left: 200px;
+    animation: levitate4 5s infinite alternate ease-in-out;
+}
+
+#bonus {
+    position: absolute;
+    z-index: 1;
+    width: 40px;
+    height: auto;
+    top: 525px;
+    left: 320px;
+    animation: levitate5 5s infinite alternate ease-in-out;
+}
+
+/* Підписка */
+#subscription {
+    margin-top: 580px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: #FFFFFF;
+    font-size: 14px;
+    display: inline-block;
+}
+
+
+
+/* Анімація для першої картинки */
+@keyframes levitate1 {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(-6px, -4px); }
+    50% { transform: translate(4px, 3px); }
+    75% { transform: translate(-4px, 4px); }
+    100% { transform: translate(5px, -4px); }
+}
+
+/* Анімація для другої картинки */
+@keyframes levitate2 {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(6px, -5px); }
+    50% { transform: translate(-5px, 5px); }
+    75% { transform: translate(4px, -3px); }
+    100% { transform: translate(-6px, 5px); }
+}
+
+/* Анімація для третьої картинки */
+@keyframes levitate3 {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(-4px, 6px); }
+    50% { transform: translate(5px, -3px); }
+    75% { transform: translate(-5px, -2px); }
+    100% { transform: translate(6px, 3px); }
+}
+
+/* Анімація для четвертої картинки */
+@keyframes levitate4 {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(5px, 4px); }
+    50% { transform: translate(-6px, -3px); }
+    75% { transform: translate(3px, 5px); }
+    100% { transform: translate(-4px, -5px); }
+}
+
+/* Анімація для п'ятої картинки */
+@keyframes levitate5 {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(-5px, 3px); }
+    50% { transform: translate(4px, -5px); }
+    75% { transform: translate(-3px, 6px); }
+    100% { transform: translate(5px, -4px); }
+}
+
+/* Контейнер меню */
+#navigation {
+    border-radius: 40px;
+    z-index: 1;
+    background: linear-gradient(145deg, #0b1a60, #081b79);
+    position: fixed; 
+    bottom: 0;       
+    width: 100%;    
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4), 0px -5px 10px rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.2); /* напівпрозора рамка */
+    overflow: hidden; /* Забирає все, що виходить за межі контейнера */
+}
+
+
+/* Стилі для кнопок як зображень */
+.nav-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    z-index: 1; /* Високий індекс для перекриття лінії */
+}
+
+/* Стиль для кожної кнопки та її тексту */
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрує елементи по горизонталі */
+    justify-content: center;
+}
+
+/* Текст під кнопкою */
+.nav-text {
+    font-size: 12px;
+    color: #FFFFFF;
+    margin-top: -4px; /* Відстань між кнопкою і текстом */
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Зображення кнопки */
+.button-image {
+    width: 50px;
+    height: 50px;
+    transition: filter 0.3s ease;
+}
+
+/* Підсвічування при наведенні на кнопку */
+.nav-button:hover .button-image {
+    filter: drop-shadow(0 0 10px rgba(0, 255, 255, 0.7));
+}
+
+/* Неонова підсвітка при наведенні */
+.nav-button:hover {
+    box-shadow: 0 0 13px rgba(0, 255, 255, 0.5), inset 0 0 13px rgba(0, 255, 255, 0.5);
+    border-radius: 80%;
+    transition: box-shadow 0.3s ease;
+}
+
+/* Стиль для розділювачів між кнопками */
+.divider-image {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(249, 250, 250); /* Напівпрозорий білий */
+    border-radius: 30%;
+    padding: 7px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Декоративна лінія внизу меню */
+#navigation::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(90deg, transparent, rgba(0, 255, 255, 0.5), transparent);
+    box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.5);
+}
+
+/* Стилі для зображень у контейнері */
+#my-subka {
+    position: absolute;
+    top: 580px;
+    left: 50px;
+    width: 300px;
+    height: auto;
+}
+
+#my-idka {
+    position: absolute;
+    top: 2px;
+    left: 50px;
+    width: 320px;
+    height: auto;
+}
+
+#my-menu {
+    position: fixed;
+    bottom: 0; 
+    left: 0;
+    width: 100%;
+    height: 85px;
+   
+}
+
+
+#my-buble1 {
+    display: grid;
+    position: fixed;
+    place-items: center;
+    top: 93px;
+    left: 150px;
+    width: 110px;
+    height: auto;
+    animation: levitate1 5s infinite alternate ease-in-out;
+}
+
+#my-buble2 {
+    position: fixed;
+    top: 182px;
+    left: 34px;
+    width: 140px;
+    height: auto;
+    animation: levitate2 5s infinite alternate ease-in-out;
+}
+
+#my-buble3 {
+    position: fixed;
+    top: 233px;
+    left: 174px;
+    width: 220px;
+    height: auto;
+    animation: levitate3 5s infinite alternate ease-in-out;
+}
+
+#my-buble4 {
+    position: fixed;
+    top: 423px;
+    left: 50px;
+    width: 105px;
+    height: auto;
+    animation: levitate4 5s infinite alternate ease-in-out;
+}
+#my-buble5 {
+    position: fixed;
+    top: 485px;
+    left: 221px;
+    width: 90px;
+    height: auto;
+    animation: levitate5 5s infinite alternate ease-in-out;
+}
+
+
+#my-lvl {
+    position: absolute;
+    top: 470px;
+    left: 15px;
+    width: auto;
+    height: 85px;
+    animation: levitate4 5s infinite alternate ease-in-out;
+}
+
+#my-referal {
+    position: absolute;
+    top: 496px;
+    left: 250px;
+    width: auto;
+    height: 85px;
+    animation: levitate5 5s infinite alternate ease-in-out;
+}
+
+#my-balance {
+    position: absolute;
+    top: 160px;
+    left: -9px;
+    width: auto;
+    height: 85px;
+    animation: levitate2 5s infinite alternate ease-in-out;
+}
+
+#my-bonus {
+    position: absolute;
+    top: 147px;
+    left: 184px;
+    width: auto;
+    height: 85px;
+    animation: levitate1 5s infinite alternate ease-in-out;
+}
