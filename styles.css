@@ -146,7 +146,7 @@ body {
     position: fixed; 
     bottom: 0;       
     width: 100%;
-    height: clamp(5vh, 15vw, 20vh); /* Висота змінюється між 8vh і 15vh, з оптимальним значенням 10vw */
+    height: clamp(10vh, 15vw, 30vh); /* Висота змінюється між 8vh і 15vh, з оптимальним значенням 10vw */
     display: flex;
     justify-content: space-around;
     align-items: center;
